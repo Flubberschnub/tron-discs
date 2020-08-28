@@ -1,6 +1,4 @@
 ##tick main
-##throwndisc tag
-execute as @a[tag=discthrown] at @s run function dot:match/player/throwndisc
 
 ##player discID
 scoreboard players reset @a[predicate=!dot:dot/holdingdisc,tag=!discthrown] DiscID
@@ -8,7 +6,7 @@ tag @a[predicate=!dot:dot/holdingdisc,tag=!discthrown] remove uniquediscid
 
 ##unique discID
 #execute as @a[predicated=!dot:dot/holdingdisc,predicate=!lc:lc/riding_cycle,tag=!rezzedvehicle] run tag @s remove uniqueid
-execute as @a[predicate=dot:dot/holdingdisc,tag=!uniquediscid] run function dot:id/getuniquediscid
+execute as @a[predicate=dot:dot/holdingdisc,tag=!uniquediscid,tag=!discthrown] run function dot:id/getuniquediscid
 
 execute as @a[predicate=dot:dot/holdingdisc,tag=!discthrown] store result score @s DiscID run data get entity @s SelectedItem.tag.DiscID 1
 
@@ -24,3 +22,6 @@ execute as @e[tag=throwndisc] at @s run function dot:match/disc/tick
 
 ##reset clickDisc
 scoreboard players reset @a[scores={clickDisc=1..}] clickDisc
+
+##discthrown tag
+#execute as @a[tag=discthrown] at @s run function dot:match/player/throwndisc

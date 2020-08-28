@@ -1,5 +1,8 @@
 ##motion tick
 
+##hit entity
+execute if entity @e[tag=!matchedid,type=#lj:livingthings,distance=..1] at @s run function dot:disc/hit
+
 ##reset y motion
 #data modify entity @s Motion.[1] set value 0d
 
@@ -14,6 +17,3 @@ function dot:disc/altmotion/move
 
 ##velocity
 #function dot:disc/altmotion/drag
-
-##damage
-effect give @e[tag=!matchedid,type=#lj:livingthings,distance=..1] minecraft:instant_damage 1 0 true
