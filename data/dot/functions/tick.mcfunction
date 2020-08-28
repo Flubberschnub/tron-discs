@@ -24,4 +24,4 @@ execute as @e[tag=throwndisc] at @s run function dot:match/disc/tick
 scoreboard players reset @a[scores={clickDisc=1..}] clickDisc
 
 ##discthrown tag
-#execute as @a[tag=discthrown] at @s run function dot:match/player/throwndisc
+execute as @a[tag=discthrown] at @s run function dot:match/player/throwndisc
