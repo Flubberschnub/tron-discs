@@ -1,7 +1,7 @@
 ##motion tick
 
 ##hit entity
-execute if entity @e[tag=!matchedid,type=#lj:livingthings,distance=..1] at @s run function dot:disc/hit
+execute if entity @e[tag=!matchedid,type=#lj:livingthings,distance=..1.5] at @s run function dot:disc/hit
 
 ##reset y motion
 #data modify entity @s Motion.[1] set value 0d

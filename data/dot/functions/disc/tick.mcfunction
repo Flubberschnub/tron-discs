@@ -18,4 +18,7 @@ execute as @s at @s if block ~ ~-0.01 ~ #dot:passthrough run function dot:disc/a
 execute as @s at @s if block ~ ~-0.01 ~ #dot:passthrough run function dot:disc/altmotion/tick
 execute as @s at @s if block ~ ~-0.01 ~ #dot:passthrough run function dot:disc/altmotion/tick
 
+##slight aim assist toward entities
+#execute at @s facing entity @e[tag=!matchedid,distance=..10,type=#lj:livingthings,type=!player,limit=1,sort=nearest] feet run tp ^ ^ ^0.02
+
 #execute at @s positioned ^ ^ ^5 run particle minecraft:flame ~ ~ ~ 0.3 0.3 0.3 0 10
