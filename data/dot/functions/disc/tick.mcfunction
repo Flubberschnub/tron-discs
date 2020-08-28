@@ -10,7 +10,9 @@ execute if score @s discLife matches 10.. at @s positioned ~ ~-1.5 ~ if entity @
 execute if score @s discLife matches 10.. at @s if entity @a[tag=matchedid,distance=..1] run function dot:disc/dropself
 
 #execute as @s at @s if block ~ ~-0.2 ~ #dot:passthrough run function dot:disc/motion/tick
-##four times motion for precision
+##six times motion for precision
+execute as @s at @s if block ~ ~-0.01 ~ #dot:passthrough run function dot:disc/altmotion/tick
+execute as @s at @s if block ~ ~-0.01 ~ #dot:passthrough run function dot:disc/altmotion/tick
 execute as @s at @s if block ~ ~-0.01 ~ #dot:passthrough run function dot:disc/altmotion/tick
 execute as @s at @s if block ~ ~-0.01 ~ #dot:passthrough run function dot:disc/altmotion/tick
 execute as @s at @s if block ~ ~-0.01 ~ #dot:passthrough run function dot:disc/altmotion/tick
