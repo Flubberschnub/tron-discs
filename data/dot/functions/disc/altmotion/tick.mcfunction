@@ -14,3 +14,6 @@ function dot:disc/altmotion/move
 
 ##velocity
 #function dot:disc/altmotion/drag
+
+##damage
+effect give @e[tag=!matchedid,type=#lj:livingthings,distance=..1] minecraft:instant_damage 1 0 true
