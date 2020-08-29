@@ -3,7 +3,7 @@
 tag @s add discthrown
 
 ##summon disc
-execute at @s run summon armor_stand ~ ~1 ~ {CustomNameVisible:0b,Small:1b,Marker:1b,Invisible:1b,NoBasePlate:1b,Silent:1b,PersistenceRequired:1b,Tags:["throwndisc","justthrown"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:991}}],CustomName:'{"text":"disc"}'}
+execute at @s run function dot:color/throw
 
 ##set rotation/motion just once, magnitude per tick
 execute at @s anchored eyes positioned ^ ^ ^0.1 run tp @e[tag=throwndisc,tag=justthrown,limit=1] ~ ~ ~ ~ ~

@@ -3,7 +3,10 @@ scoreboard players set @s aestd.item.slot -1
 scoreboard players set @s aestd.item.slot2 -2
 function aestd1:item/swap
 scoreboard players set @s aestd.item.slot -1
-scoreboard players set @s aestd.item.cmd 99
+
+execute unless score @s circuitcolor matches 2.. run scoreboard players set @s aestd.item.cmd 99
+execute if score @s circuitcolor matches 2 run scoreboard players set @s aestd.item.cmd 299
+
 data remove storage aestd:input nbt
 data modify storage aestd:input nbt.activated set value 0
 function aestd1:item/set_custom_model_data
