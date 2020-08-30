@@ -1,0 +1,22 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:reference",
+          "name": "aestd1:flags/is_sneaking"
+        }
+      },
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:reference",
+          "name": "dot:dot/holdingdisc"
+        }
+      }
+    ]
+  }
+}

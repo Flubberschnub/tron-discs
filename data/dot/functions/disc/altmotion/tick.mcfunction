@@ -9,6 +9,9 @@ execute if entity @e[tag=!matchedid,type=#lj:livingthings,distance=..2] at @s ru
 ##bounce
 execute at @s run function dot:disc/altbounce/tick
 
+##block
+execute at @s if entity @a[distance=..2,tag=blocking] run function dot:disc/altmotion/block
+
 ##disc toward rotation and velocity
 execute at @s run function dot:library/position/initialdir
 
