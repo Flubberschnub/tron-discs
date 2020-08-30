@@ -14,7 +14,7 @@
         "condition": "minecraft:inverted",
         "term": {
           "condition": "minecraft:reference",
-          "name": "dot:dot/holdingdisc"
+          "name": "dot:dot/holdingactivedisc"
         }
       }
     ]

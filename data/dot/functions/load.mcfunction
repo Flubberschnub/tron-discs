@@ -11,6 +11,7 @@ scoreboard objectives add clickDisc minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add discLife dummy
 scoreboard objectives add drag dummy
 scoreboard objectives add bounceTimes dummy
+scoreboard objectives add humTimer dummy
 
 
 ##numbers

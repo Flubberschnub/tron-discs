@@ -15,3 +15,4 @@ scoreboard players reset @s aestd.item.slot
 scoreboard players reset @s aestd.item.slot2
 scoreboard players reset @s aestd.item.cmd
 execute at @s run playsound disc.deactivate master @a[distance=..7] ~ ~ ~
+stopsound @s master disc.hum

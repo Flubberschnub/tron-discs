@@ -30,3 +30,6 @@ scoreboard players reset @a[scores={clickDisc=1..}] clickDisc
 
 ##discthrown tag
 execute as @a[tag=discthrown] at @s run function dot:match/player/throwndisc
+
+##helddisc tick
+execute as @a[predicate=dot:dot/holdingdisc] run function dot:helddisc/tick

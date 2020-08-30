@@ -21,3 +21,4 @@ replaceitem entity @s weapon.mainhand air
 
 ##playsound
 execute at @s run playsound disc.throw master @a[distance=..30] ~ ~ ~ 1
+stopsound @s master disc.hum
