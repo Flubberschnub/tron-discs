@@ -12,6 +12,7 @@ scoreboard objectives add discLife dummy
 scoreboard objectives add drag dummy
 scoreboard objectives add bounceTimes dummy
 scoreboard objectives add humTimer dummy
+scoreboard objectives add discXAngle dummy
 
 
 ##numbers

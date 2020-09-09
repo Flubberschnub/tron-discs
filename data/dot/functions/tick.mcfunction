@@ -20,7 +20,7 @@ execute as @a[predicate=dot:dot/blocking,tag=blocking] run function dot:helddisc
 execute as @a[predicate=!dot:dot/blocking,tag=blocking] run function dot:helddisc/block/stop
 
 ##throw
-execute as @a[predicate=dot:dot/holdingactivedisc,scores={clickDisc=1..}] at @s run function dot:throw
+execute as @a[predicate=dot:dot/holdingactivedisc,tag=!blocking,scores={clickDisc=1..}] at @s run function dot:throw
 
 ##disc tick
 execute as @e[tag=throwndisc] at @s run function dot:match/disc/tick

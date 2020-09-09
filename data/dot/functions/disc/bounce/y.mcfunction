@@ -6,3 +6,4 @@ tag @s remove bouncing
 
 ##rotation from motion
 execute at @s run function dot:library/position/rot_from_motion/rotation_from_motion
+execute at @s run function dot:library/position/initialdir
