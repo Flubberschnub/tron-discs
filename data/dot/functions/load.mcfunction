@@ -17,6 +17,7 @@ scoreboard objectives add ThrownDeaded deathCount
 
 
 ##numbers
+scoreboard players set returning discLife 40
 scoreboard players set basic drag 10
 scoreboard players set basic throwSpeed 250
 scoreboard players set 1000 Constant 1000

@@ -18,5 +18,11 @@ execute at @s run function dot:library/position/initialdir
 ##actually moving forward
 function dot:disc/altmotion/move
 
+##hitting redstone actuators
+fill ^ ^ ^1 ^ ^ ^1 target[power=15] replace target
+
+##bounceback blocks
+execute if block ^ ^ ^1 #dot:reflector run scoreboard players operation @s discLife = returning discLife
+
 ##velocity
 #function dot:disc/altmotion/drag
