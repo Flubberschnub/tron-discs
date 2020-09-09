@@ -13,6 +13,7 @@ scoreboard objectives add drag dummy
 scoreboard objectives add bounceTimes dummy
 scoreboard objectives add humTimer dummy
 scoreboard objectives add discXAngle dummy
+scoreboard objectives add ThrownDeaded deathCount
 
 
 ##numbers

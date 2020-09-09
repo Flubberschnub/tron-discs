@@ -12,7 +12,7 @@ execute as @a[predicate=dot:dot/holdingdisc,tag=!discthrown] store result score 
 
 ##activate disc
 execute as @a[predicate=dot:dot/activatedisc] run function dot:helddisc/activate
-execute as @a[predicate=dot:dot/deactivatedisc] run function dot:helddisc/deactivate
+execute as @a[predicate=dot:dot/deactivatedisc,tag=!blocking] run function dot:helddisc/deactivate
 
 ##blocking
 execute as @a[predicate=dot:dot/blocking,tag=!blocking] run function dot:helddisc/block/start
@@ -33,3 +33,7 @@ execute as @a[tag=discthrown] at @s run function dot:match/player/throwndisc
 
 ##helddisc tick
 execute as @a[predicate=dot:dot/holdingdisc] run function dot:helddisc/tick
+
+##death event
+execute as @a[tag=discthrown,scores={ThrownDeaded=1..}] run function dot:ondeath
+scoreboard players reset @a ThrownDeaded
