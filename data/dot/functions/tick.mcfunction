@@ -1,5 +1,8 @@
 ##tick main
 
+##back mounting
+execute as @a run function dot:backmount
+
 ##player discID
 scoreboard players reset @a[predicate=!dot:dot/holdingdisc,tag=!discthrown] DiscID
 tag @a[predicate=!dot:dot/holdingdisc,tag=!discthrown] remove uniquediscid

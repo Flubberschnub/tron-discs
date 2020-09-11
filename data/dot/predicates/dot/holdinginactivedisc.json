@@ -1,12 +1,13 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "equipment": {
-      "mainhand": {
-        "item": "minecraft:carrot_on_a_stick",
-        "nbt": "{disc:1,activated:0}"
-      }
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "dot:dot/holdinginactivedisc/holdinginactivediscmainhand"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "dot:dot/holdinginactivedisc/holdinginactivediscoffhand"
     }
-  }
+  ]
 }
