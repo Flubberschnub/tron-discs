@@ -1,15 +1,10 @@
 {
-  "condition": "minecraft:entity_properties",
+  "condition": "minecraft:entity_scores",
   "entity": "this",
-  "predicate": {
-    "equipment": {
-      "mainhand": {
-        "item": "minecraft:air"
-      },
-      "offhand": {
-        "item": "minecraft:carrot_on_a_stick",
-        "nbt": "{disc:1,activated:1}"
-      }
+  "scores": {
+    "deactivateDisc": {
+      "min": 1,
+      "max": 10000000
     }
   }
 }
