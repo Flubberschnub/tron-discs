@@ -4,8 +4,8 @@
 #function aestd1:item/swap
 
 scoreboard players reset @s deactivateDisc
-execute at @s run tp @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{disc:1}}}] ~ ~-100 ~
-kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{disc:1}}}]
+execute at @s run tp @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{disc:1,activated:1}}}] ~ ~-100 ~
+kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{disc:1,activated:1}}}]
 
 #scoreboard players set @s aestd.item.slot -1
 

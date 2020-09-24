@@ -38,7 +38,7 @@ execute as @a[tag=discthrown] at @s run function dot:match/player/throwndisc
 
 ##helddisc tick
 execute as @a[predicate=dot:dot/holdingdisc] run function dot:helddisc/tick
-execute as @a[predicate=!dot:dot/holdingdisc] run tag @s remove holdingactivedisc
+execute as @a[predicate=!dot:dot/holdingactivedisc] run tag @s remove holdingactivedisc
 
 ##death event
 execute as @a[tag=discthrown,scores={ThrownDeaded=1..}] run function dot:ondeath

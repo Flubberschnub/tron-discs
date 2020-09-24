@@ -16,7 +16,8 @@ execute if score tempDiscCount Constant matches 1.. unless entity @s[nbt={Active
 ##clears head disc if holding disc
 execute as @s[predicate=dot:dot/holdingdisc,predicate=dot:dot/is_wearing_disc_head] run function dot:backmount/clearfakedisc
 
-
+##clears head disc if no discs
+execute as @s[predicate=dot:dot/is_wearing_disc_head] unless score tempDiscCount Constant matches 1.. run function dot:backmount/clearfakedisc
 
 ##cleanup
 scoreboard players reset tempDiscCount Constant
