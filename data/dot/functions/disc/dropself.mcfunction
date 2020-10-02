@@ -1,5 +1,5 @@
 ##drop self
-execute at @s as @a[tag=matchedid] run function dot:disc/giveactive
+execute at @s as @a[tag=matchedid] run function dot:disc/catch
 
 tag @s add dropped
 
