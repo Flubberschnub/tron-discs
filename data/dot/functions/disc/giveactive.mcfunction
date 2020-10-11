@@ -5,3 +5,5 @@ execute if score @s circuitcolor matches 2 run summon item ~ ~ ~ {Item:{id:"mine
 
 
 scoreboard players set @s humTimer 1200
+
+tag @s add dot.catchdisc

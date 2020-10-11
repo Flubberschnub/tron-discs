@@ -17,7 +17,8 @@ scoreboard players operation @e[tag=justthrown,limit=1] circuitcolor = @s circui
 tag @e[tag=justthrown] remove justthrown
 
 ##delete item
-replaceitem entity @s weapon.mainhand air
+replaceitem entity @s[predicate=!aestd1:inventory/is_holding_item] weapon.offhand air
+replaceitem entity @s[predicate=aestd1:inventory/is_holding_item] weapon.mainhand air
 
 ##playsound
 execute at @s run playsound disc.throw master @a[distance=..30] ~ ~ ~ 1

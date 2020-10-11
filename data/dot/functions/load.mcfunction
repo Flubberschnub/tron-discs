@@ -14,6 +14,7 @@ scoreboard objectives add bounceTimes dummy
 scoreboard objectives add humTimer dummy
 scoreboard objectives add discXAngle dummy
 scoreboard objectives add ThrownDeaded deathCount
+scoreboard objectives add deactivateDisc minecraft.dropped:minecraft.carrot_on_a_stick
 
 
 ##numbers
