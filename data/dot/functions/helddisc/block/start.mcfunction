@@ -6,6 +6,7 @@ scoreboard players set @s aestd.item.slot -1
 
 execute unless score @s circuitcolor matches 2.. run scoreboard players set @s aestd.item.cmd 992
 execute if score @s circuitcolor matches 2 run scoreboard players set @s aestd.item.cmd 2992
+execute if score @s circuitcolor matches 3 run scoreboard players set @s aestd.item.cmd 3992
 
 function aestd1:item/set_custom_model_data
 
