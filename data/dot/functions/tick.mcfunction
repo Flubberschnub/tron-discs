@@ -14,7 +14,7 @@ execute as @a[predicate=dot:dot/holdingdisc,tag=!uniquediscid,tag=!discthrown] r
 execute as @a[predicate=dot:dot/holdingdisc,tag=!discthrown] store result score @s DiscID run data get entity @s SelectedItem.tag.DiscID 1
 
 ##activate disc
-execute as @a[predicate=dot:dot/deactivatedisc,tag=holdingactivedisc,tag=!blocking] run function dot:helddisc/deactivate
+execute as @a[predicate=dot:dot/deactivatedisc,tag=holdingactivediscmainhand,tag=!blocking] run function dot:helddisc/deactivate
 scoreboard players reset @a deactivateDisc
 execute as @a[predicate=dot:dot/activatedisc] run function dot:helddisc/activate
 
@@ -39,6 +39,7 @@ execute as @a[tag=discthrown] at @s run function dot:match/player/throwndisc
 ##helddisc tick
 execute as @a[predicate=dot:dot/holdingdisc] run function dot:helddisc/tick
 execute as @a[predicate=!dot:dot/holdingactivedisc] run tag @s remove holdingactivedisc
+execute as @a[predicate=!dot:dot/holdingactivedisc/holdingactivediscmainhand] run tag @s remove holdingactivediscmainhand
 
 ##death event
 execute as @a[tag=discthrown,scores={ThrownDeaded=1..}] run function dot:ondeath
